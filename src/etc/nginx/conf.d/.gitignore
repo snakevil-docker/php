@@ -1,0 +1,4 @@
+*
+!.gitignore
+
+!upstream-php5-fpm.conf

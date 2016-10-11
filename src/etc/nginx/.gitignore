@@ -3,3 +3,4 @@
 
 !nginx.conf
 !sites-available/
+!conf.d/
