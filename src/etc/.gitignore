@@ -4,3 +4,4 @@
 !services.d/
 !php5/
 !nginx/
+!cont-init.d/

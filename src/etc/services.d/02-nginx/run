@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+echo "[services.d] starting service: nginx"
+nginx -g "daemon off;"
