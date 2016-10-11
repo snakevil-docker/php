@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+touch /mnt/log/php-error.log
+chown nobody:nobody /mnt/log/php-error.log
+
+echo "[php5-fpm] start"
+php-fpm -F
