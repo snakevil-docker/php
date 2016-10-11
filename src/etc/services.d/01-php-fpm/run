@@ -3,5 +3,5 @@
 touch /mnt/log/php-error.log
 chown nobody:nobody /mnt/log/php-error.log
 
-echo "[php5-fpm] start"
+echo "[services.d] starting service: php5-fpm"
 php-fpm -F
