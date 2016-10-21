@@ -4,8 +4,9 @@ MAINTAINER Snakevil Zen <zsnakevil@gmail.com>
 EXPOSE 80
 VOLUME /mnt/log
 
-RUN apk add --no-cache php5-fpm php5-opcache nginx
-ADD src/ /
+RUN BUILD_DATE=20161021 \
+ && apk add --no-cache php5-fpm php5-opcache nginx
+ADD share/docker/ /
 
 RUN rm -r /etc/php5/fpm.d /etc/nginx/default.d /etc/nginx/fastcgi.conf \
     /var/www/localhost \
