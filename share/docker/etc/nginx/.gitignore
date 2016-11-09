@@ -1,7 +1,5 @@
 *
 !.gitignore
 
-!nginx.conf
 !sites-available/
 !conf.d/
-!sites-enabled/
