@@ -1,9 +1,9 @@
 snakevil/php
 ===
 
-基于 [snakevil/base][base] 构建地 [nginx][]+[php-fpm][] 基础镜像。
+基于 [snakevil/nginx][snakevil-nginx] 构建地 [nginx][]+[php-fpm][] 基础镜像。
 
-[base]: https://github.com/snakevil-docker/base
+[snakevil-nginx]: https://github.com/snakevil-docker/nginx
 [nginx]: http://nginx.org
 [php-fpm]: http://php.net/fpm
 
@@ -12,20 +12,14 @@ EXPOSE
 
 * 80
 
+    实现自 [snakevil/nginx](https://github.com/snakevil-docker/nginx#expose)。
+
 VOLUME
 ---
 
 * `/mnt/log`
 
-    日志目录的外挂卷。
-
-    * `nginx-access.log`
-
-        [nginx][] 访问日志。
-
-    * `nginx-error.log`
-
-        [nginx][] 错误日志。
+    实现自 [snakevil/nginx](https://github.com/snakevil-docker/nginx#volume)。
 
     * `php-error.log`
 

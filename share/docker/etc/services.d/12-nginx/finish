@@ -1,3 +1,0 @@
-#!/bin/sh -e
-
-echo "[services.d] stopping service: nginx"

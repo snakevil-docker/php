@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+cd /mnt/log
+
+touch php-error.log php-slow.log
+chown nobody:nobody php-error.log
